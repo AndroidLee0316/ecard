@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        //基线的包才能使用人脸核验
+        applicationId "com.pingan.smt.template"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "0.0.1"
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi-v7a"
+        }
+        multiDexEnabled true
+        // ARouter 路由配置
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            buildConfigField "boolean", "PRODUCT_MODE", "true"
+            buildConfigField "int", "PRODUCT_FLAVORS_TYPE", "1"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            buildConfigField "boolean", "PRODUCT_MODE", "false"
+            buildConfigField "int", "PRODUCT_FLAVORS_TYPE", "2"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+
+    api "com.android.support:appcompat-v7:${supportLibraryVersion}"
+    api "com.android.support:multidex:1.0.3"
+    // ARouter
+    annotationProcessor "com.alibaba:arouter-compiler:${rootProject.ext.arouterCompiler}"
+
+    if (isMavenBuild == 'false') {
+        api project(':BusinessECardBag')
+    } else {
+        api "com.zxs.business:ecardbag:1.0.0"
+    }
+    api "com.zxs.business:BusinessUser:1.0.0"
+    debugApi "com.squareup.leakcanary:leakcanary-android:${rootProject.ext.leakcanaryVersion}"
+    releaseApi "com.squareup.leakcanary:leakcanary-android-no-op:${rootProject.ext.leakcanaryNoOpVersion}"
+}

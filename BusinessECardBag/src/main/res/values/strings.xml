@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">Ecard</string>
+    <string name="pasc_ecard_list_title">我的证照</string>
+
+    <string name="pasc_ecard_relevancy_title">关联电子证照</string>
+
+    <string name="pasc_ecard_detial_title">查看账户信息</string>
+
+    <string name="pasc_ecard_net_error">无法连接网络，请检查网络设置</string>
+    <string name="pasc_ecard_net_error_tip">网络错误，请重试</string>
+    <string name="pasc_ecard_server_error_tip">服务器异常，请重试</string>
+    <string name="pasc_ecard_server_error_toast">服务器异常</string>
+    <string name="pasc_ecard_loading">努力加载中</string>
+    <string name="pasc_ecard_retry">点击刷新</string>
+    <string name="pasc_ecard_empty_no_content">无可添加的电子证照</string>
+    <string name="pasc_ecard_sort_title">排序</string>
+    <string name="pasc_ecard_add_title">添加证照</string>
+    <string name="pasc_ecard_unbind_title">解绑</string>
+    <string name="pasc_ecard_pop_add">添加</string>
+    <string name="pasc_ecard_pop_unbing">解绑</string>
+    <string name="pasc_ecard_pop_sort">排序</string>
+
+    <string name="pasc_ecard_welcome_user_ecard">欢迎使用电子证照服务</string>
+    <string name="pasc_ecard_protocol_agree_tip">点击立即使用，即表示阅读并同意</string>
+    <string name="pasc_ecard_welcome_user_ecard_btn">立即使用</string>
+    <string name="pasc_ecard_add_card">绑定关联</string>
+    <string name="pasc_ecard_cancel_card">放弃关联</string>
+    <string name="pasc_ecard_add_card_success">绑定成功</string>
+    <string name="pasc_ecard_relation_no_data">未检索到您有可绑定的证照</string>
+    <string name="pasc_ecard_relation_bing">一键绑定</string>
+    <string name="pasc_ecard_add_card_cancel">需要关联</string>
+    <string name="pasc_ecard_protocol_name">《服务协议》</string>
+    <string name="pasc_ecard_protocol_url"></string>
+    <string name="pasc_ecard_list_delect">移除证照</string>
+    <string name="pasc_ecard_list_detial">查看账户信息</string>
+
+    <string name="pasc_ecard_tip_no_data">证照列表为空，不能操作列表数据</string>
+    <string name="pasc_ecard_dialog_sort_confirm">重试</string>
+
+    <string name="pasc_ecard_detial_accout">账户信息</string>
+    <string name="pasc_ecard_detial_accout_nomarl">正常</string>
+    <string name="pasc_ecard_detial_accout_unebal">失效</string>
+
+
+    <string name="pasc_ecard_add_warning">确定要开通%s?</string>
+
+
+    <string name="pasc_ecard_list_dialog_delect">移除</string>
+    <string name="pasc_ecard_list_dialog_calce">取消</string>
+    <string name="pasc_ecard_list_dialog_tip">确定要移除</string>
+    <string name="pasc_ecard_unbind_dialog_tip">确定取消关联</string>
+    <string name="pasc_ecard_unbind_dialog_calce">保留</string>
+    <string name="pasc_ecard_unbind_dialog_unbind">取消关联</string>
+    <string name="pasc_ecard_unbind_success">已取消关联</string>
+
+    <string name="pasc_ecard_list_unuser_tip">相关服务暂不可使用</string>
+
+    <string name="pasc_ecard_list_unuser_btn">我知道了</string>
+    <string name="pasc_ecard_no_bind_tip">暂无可绑定的</string>
+    <string name="pasc_ecard_unbind_no_date">暂未绑定任何证照</string>
+
+
+    <string name="pasc_i_know">我知道了</string>
+    <string name="face_check_dialog_hint">您今日人脸识别失败次数过多\n请明日再试</string>
+    <string name="pasc_ecard_face_check_failed">人脸核验失败,请检测是否核验失败次数过多</string>
+
+
+    <string name="pasc_ecard_event_id_open_ecard_item">电子证照-展开证照-证照名称</string>
+    <string name="pasc_ecard_event_lable_open_ecard_item">%s证照展开</string>
+    <string name="pasc_ecard_event_id_open_ecard_detail">电子证照-查看账户详情</string>
+    <string name="pasc_ecard_event_lable_open_ecard_detail">%s证照详情点击</string>
+    <string name="pasc_ecard_event_id_open_ecard_service">电子证照-快捷服务</string>
+    <string name="pasc_ecard_event_lable_open_ecard_service">%s证照-%s服务点击</string>
+
+    <string name="pasc_ecard_event_id_ecard_list_page_more_click">电子证照-更多</string>
+    <string name="pasc_ecard_event_lable_ecard_list_page_more_click">按钮点击</string>
+    <string name="pasc_ecard_event_lable_ecard_list_page_more_add_click">添加</string>
+    <string name="pasc_ecard_event_lable_ecard_list_page_more_unbind_click">排序</string>
+    <string name="pasc_ecard_event_lable_ecard_list_page_more_sort_click">解绑</string>
+
+    <string name="pasc_ecard_event_id_ecard_introduce_page_use_click">证照介绍页-立即使用</string>
+    <string name="pasc_ecard_event_lable_ecard_introduce_page_use_click">按钮点击</string>
+    <string name="pasc_ecard_event_lable_ecard_introduce_page_back">返回</string>
+    <string name="pasc_ecard_event_lable_ecard_introduce_page_to_facecheck">实名检测</string>
+    <string name="pasc_ecard_event_lable_ecard_introduce_cert_status">实名状态</string>
+    <string name="pasc_ecard_event_lable_ecard_introduce_cert_status_success">成功</string>
+    <string name="pasc_ecard_event_lable_ecard_introduce_cert_status_cancle">取消</string>
+
+    <string name="pasc_ecard_event_id_relevancy">电子证照-一键绑定</string>
+    <string name="pasc_ecard_event_lable_relevancy_bind">绑定</string>
+    <string name="pasc_ecard_event_lable_relevancy_back">返回</string>
+
+    <string name="pasc_ecard_event_id_unbind">电子证照-解绑</string>
+    <string name="pasc_ecard_event_lable_unbind">解绑证照</string>
+    <string name="pasc_ecard_event_lable_unbind_unbind">解绑</string>
+    <string name="pasc_ecard_event_lable_unbind_no_unbind">保留</string>
+
+    <string name="pasc_ecard_event_id_bind">电子证照-开通证照</string>
+    <string name="pasc_ecard_event_lable_bind_back">返回</string>
+    <string name="pasc_ecard_event_lable_bind_bind">绑定关联</string>
+    <string name="pasc_ecard_event_lable_bind_no_bind">放弃绑定</string>
+    <string name="pasc_ecard_event_id_bind_sure">电子证照-开通证照-二次确认</string>
+    <string name="pasc_ecard_event_lable_bind_sure_cancle">取消</string>
+    <string name="pasc_ecard_event_lable_bind_sure_sure">确定</string>
+
+
+    <string name="pasc_ecard_event_id_enter_sigle">我的-电子证照-证照名称</string>
+    <string name="pasc_ecard_event_lable_enter_sigle_click">%s证照点击</string>
+    <string name="pasc_ecard_event_id_enter_all">我的-电子证照-全部证照</string>
+    <string name="pasc_ecard_event_lable_enter_all_click">入口点击</string>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pasc_ecard_list_bg_color"
+    android:orientation="vertical">
+
+    <com.pasc.lib.widget.toolbar.PascToolbar
+        android:id="@+id/toolbar"
+        style="@style/BlackFontToolbar"
+        android:background="@color/color_white"
+        app:enable_under_divider="true"
+        app:support_translucent_status_bar="true"
+        app:title="@string/pasc_ecard_relevancy_title" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        layout="@layout/pasc_ecard_layout_list" />
+
+    <Button
+        android:id="@+id/tv_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/selector_primary_button"
+        android:gravity="center"
+        android:text="@string/pasc_ecard_relation_bing"
+        android:textColor="@color/pasc_ecard_btn_text_color"
+        android:textSize="@dimen/text_size_17"
+        android:stateListAnimator="@null"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+
+
+    <dimen name="pasc_ecard_title_size">17sp</dimen>
+    <dimen name="pasc_ecard_text_size">15sp</dimen>
+    <dimen name="pasc_ecard_tip_size">13sp</dimen>
+    <dimen name="pasc_ecard_more_size">22sp</dimen>
+
+    <dimen name="pasc_ecard_hsv_item_space">15dp</dimen>
+    <dimen name="pasc_ecard_hsv_margin_left_right">15dp</dimen>
+    <dimen name="pasc_ecard_hsv_item_width">214dp</dimen>
+
+
+</resources>

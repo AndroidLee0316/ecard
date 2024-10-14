@@ -1,0 +1,76 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "0.0.1"
+
+        //ARouter
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+
+        sourceSets {
+            main {
+                res.srcDirs = ['src/main/res',
+                               'src/main/res-theme']
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    repositories {
+        flatDir {
+
+            dirs 'libs'
+            dirs project(':BusinessECardBag').file('libs')
+        }
+    }
+
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    api "com.android.support:appcompat-v7:${supportLibraryVersion}"
+    annotationProcessor "com.alibaba:arouter-compiler:${rootProject.ext.arouterCompiler}"
+    implementation "com.zxs.lib:imaeLoader:1.0.0"
+    api "com.zxs.lib:scancode:1.0.0"
+    api "com.zxs.lib:userout:1.0.0"
+    api "org.greenrobot:eventbus:${rootProject.ext.eventBusVersion}"
+    api  "com.zxs.lib:statistics:1.0.0"
+    if (isMavenBuild == 'false') {
+        api project(":LibECardBagOut")
+    } else {
+        api "com.zxs.lib:ecardbagout:1.0.0"
+    }
+
+}
+
+// 发布maven配置
+apply plugin: 'maven'
+uploadArchives{
+    repositories.mavenDeployer{
+        pom.groupId = "com.zxs.business"// 唯一标识（通常为模块包名，也可以任意）
+        pom.artifactId = "ecardbag" // 项目名称（通常为类库模块名称，也可以任意）
+        pom.version = "1.0.0" // 版本号
+        // 配置本地仓库路径，项目根目录下的repository目录中
+        repository(url: uri('E:/zxsCode/maven'))
+    }
+}

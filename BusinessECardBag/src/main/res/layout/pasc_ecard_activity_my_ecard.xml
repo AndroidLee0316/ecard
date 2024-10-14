@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pasc_ecard_list_bg_color"
+    android:orientation="vertical">
+
+    <com.pasc.lib.widget.toolbar.PascToolbar
+        android:id="@+id/toolbar"
+        style="@style/BlackFontToolbar"
+        android:background="@color/color_white"
+        app:enable_under_divider="true"
+        app:support_translucent_status_bar="true"
+        app:title="@string/pasc_ecard_list_title" />
+
+    <View
+        android:id="@+id/view_"
+        android:layout_width="1px"
+        android:layout_height="1px"
+        android:layout_gravity="right"
+        android:background="@color/transparent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/pasc_ecard_layout_list" />
+
+        <LinearLayout
+            android:id="@+id/ll_no_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_ffffff"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/pasc_ecard_no_info_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:text="@string/pasc_ecard_welcome_user_ecard"
+                android:textColor="@color/pasc_ecard_himt_color"
+                android:textSize="@dimen/text_size_15" />
+
+
+            <Button
+                android:id="@+id/tv_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/selector_primary_button"
+                android:gravity="center"
+                android:text="@string/pasc_ecard_welcome_user_ecard_btn"
+                android:textColor="@color/pasc_ecard_btn_text_color"
+                android:textSize="@dimen/text_size_17"
+                android:stateListAnimator="@null"/>
+
+            <TextView
+                android:id="@+id/tv_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="79dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/pasc_ecard_protocol_agree_tip"
+                android:textColor="@color/pasc_ecard_himt_color"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

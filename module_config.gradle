@@ -1,0 +1,31 @@
+ext {
+
+    // Sdk and tools
+    minSdkVersion = 21
+    targetSdkVersion = 30
+    compileSdkVersion = 30
+
+    // App dependencies
+    supportLibraryVersion = '27.1.1'
+    support_lib_version = '27.1.1'
+
+    arouterCompiler = '1.2.0'
+
+
+
+    eventBusVersion = "3.1.1"
+    leakcanaryVersion = '1.6.2'
+    leakcanaryNoOpVersion = '1.6.2'
+    aarLibStatisticsVersion = '1.3.0'
+
+    arrLibScanCodeVersion = "1.0.9"
+    aarBusinessUserVersion = '1.0.22'
+    aarUserOutVersion = "1.0.22"
+
+//    aarBusinessUserVersion = '0.0.17-SNAPSHOT'
+//    aarUserOutVersion = "0.0.15-SNAPSHOT"
+
+    aarImageLoaderVersion = '1.0.7'
+
+
+}

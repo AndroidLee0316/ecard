@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00ffffff</color>
+    <color name="color_white">#ffffff</color>
+    <color name="pasc_ecard_text_color">#333333</color>
+    <color name="pasc_ecard_tip_color">#999999</color>
+    <color name="pasc_ecard_himt_color">#666666</color>
+    <color name="pasc_ecard_line_color">#e8e8e8</color>
+    <color name="pasc_ecard_list_bg_color">#ffffff</color>
+    <color name="pasc_ecard_btn_text_color">#ffffff</color>
+    <color name="pasc_ecard_item_address_color">#99ffffff</color>
+    <color name="pasc_ecard_info_btn_delect_color">#27a5f9</color>
+    <color name="pasc_ecard_info_btn_nomarl_color">#33ffffff</color>
+    <color name="pasc_ecard_dialog_title_color">#333333</color>
+    <color name="pasc_ecard_dialog_close_color">#666666</color>
+    <color name="pasc_ecard_dialog_comfirm_color">#73ABFA</color>
+    <color name="pasc_ecard_detial_nomarl_color">#36D1B7</color>
+    <color name="pasc_ecard_detial_unEnbal_color">#FF6B3E</color>
+    <color name="pasc_ecard_driving_color">#f7f7f7</color>
+    <color name="pasc_ecard_depatname_color">#99ffffff</color>
+    <color name="pasc_ecard_transparent_color">#00ffffff</color>
+
+
+</resources>

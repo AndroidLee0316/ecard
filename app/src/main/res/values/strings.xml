@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">电子证照Demo</string>
+
+    <string name="pasc_ecard_protocol_url">https://smt-stg.yun.city.pingan.com/basic/stg/app/feature/provision/?uiparams=%7B%22title%22:%22%22%7D#/detail</string>
+</resources>
